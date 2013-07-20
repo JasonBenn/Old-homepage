@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	$('.recommendations').click(toggleModal)
-	$('#modal-overlay').click(toggleModal)
+	$('.recommendations, #modal-overlay').click(toggleModal)
 })
 
 var toggleModal = function() {
