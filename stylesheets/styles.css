@@ -1,31 +1,65 @@
-h2, h3, h4 {
-	font-family: 'Roboto Slab', serif;
-}
-
-h2, h4 {
-	color: #444;
-}
-
-p, p>a {
-	font-family: 'Open Sans', sans-serif;
-	color: #666;
-}
-
 h1 {
-	margin-left: 5%;
-	margin-top: 20px;
+	vertical-align: 30px;
+	display: inline;
+	padding-left: 20px;
+	margin-bottom: 50px;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
-	color: #444;
+	font-size: 60px;
+	color: #333;
 }
 
 h1 span {
 	font-weight: 800;
 }
 
+img {
+	margin-left: 20px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	border: 5px solid #444;
+}
+
+h2, h3, h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-size: 18px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #DCDCDC;
+	margin-bottom: 10px;
+	color: rgb(208, 0, 99);
+}
+
+h2, h4 {
+	color: #444;
+}
+
+p, a, li {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-weight: 300;
+	line-height: 135%;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+p a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .inner {
 	max-width: 1100px;
-	margin: 10% auto;
+	margin: 5% auto;
 }
 
 .subtle {
@@ -34,8 +68,9 @@ h1 span {
 
 .column {
 	float: left;
-	max-width: 500px;
-	width: 50%;
+	min-width: 300px;
+	margin: 0 auto;
+	width: 500px;
 	padding: 20px;
 }
 
@@ -67,6 +102,18 @@ i:hover {
 
 i:hover p {
 	left: 0;
+}
+
+html {
+  background-color: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ffffff), to(#DCDCDC));
+  background: -webkit-radial-gradient(circle, #ffffff, #DCDCDC);
+  background: -moz-radial-gradient(circle, #ffffff, #DCDCDC);
+  background: -ms-radial-gradient(circle, #ffffff, #DCDCDC);
+  width: 100%;
+  height: 100%;
 }
 
 #modal-overlay {
@@ -108,3 +155,10 @@ i:hover p {
 	width: 600px;
 }
 
+li {
+	margin-bottom: 15px;
+}
+
+@media(max-width: 400) {
+ .column {width:100%;}
+}
