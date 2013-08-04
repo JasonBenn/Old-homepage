@@ -1,3 +1,18 @@
+/*** RESET ***/
+
+li, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+/*** SLIDESHOW ***/
+
 #slideshow {
 	width: 500px;
 	height: 300px;
@@ -18,6 +33,8 @@
 	height: 300px;
 }
 
+/*** TITLE & PORTRAIT ***/
+
 h1 {
 	vertical-align: 30px;
 	display: inline;
@@ -33,13 +50,15 @@ h1 span {
 	font-weight: 800;
 }
 
-img {
+.portrait {
 	margin-left: 20px;
 	height: 100px;
 	width: 100px;
 	border-radius: 100px;
 	border: 5px solid #444;
 }
+
+/*** TEXT CONTENT ***/
 
 h2, h3, h4 {
 	font-family: 'Open Sans', sans-serif;
@@ -95,6 +114,8 @@ p a:hover {
 	padding: 20px;
 }
 
+/*** FOOTER ***/
+
 footer {
 	text-align: center;
 	clear: both;
@@ -105,6 +126,7 @@ footer i {
 	margin: 0 25px;
 	padding: 0 25px;
 	font-size: 45px;
+	min-width: 46px;
 	position: relative;
 }
 
@@ -126,6 +148,8 @@ i:hover p {
 	left: 0;
 }
 
+/*** BACKGROUND ***/
+
 html {
   background-color: #000000;
   background-position: center center;
@@ -137,6 +161,8 @@ html {
   width: 100%;
   height: 100%;
 }
+
+/*** MODAL ***/
 
 #modal-overlay {
   position: fixed ;
@@ -155,8 +181,7 @@ html {
   background: -ms-radial-gradient(circle, #ffffff, #291a49);
 }
 
-
-#recommendations-modal {
+#recommendations-modal, #books-modal {
   padding: 20px;
   border: 1px solid #EAEEFA;
   border: 1px solid rgba(234, 238, 250, 0.6);
@@ -177,9 +202,7 @@ html {
 	width: 600px;
 }
 
-li {
-	margin-bottom: 15px;
-}
+/*** RESPONSIVE LAYOUT ***/
 
 @media screen and (max-width: 1200px) {
  .column {
