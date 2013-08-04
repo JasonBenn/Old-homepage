@@ -1,3 +1,23 @@
+#slideshow {
+	width: 500px;
+	height: 300px;
+	margin: 50px auto 100px auto;
+	box-shadow: 0 10px 10px #444;
+}
+
+.projects {
+	position: relative;
+}
+
+.projects li {
+	position: absolute;
+}
+
+.project {
+	width: 500px;
+	height: 300px;
+}
+
 h1 {
 	vertical-align: 30px;
 	display: inline;
