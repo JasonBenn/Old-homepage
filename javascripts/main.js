@@ -1,12 +1,20 @@
 $(document).ready(function() {
-	$('.recommendations, #modal-overlay').click(toggleModal)
+	$('.recommendations').click('#recommendations-modal', showModal)
+	$('.books').click('#books-modal', showModal)
+	$('#modal-overlay').click(hideModal)
 	hideSlideshowExceptFirstProject()
 	startSlideshow()
 })
 
-var toggleModal = function() {
-	$('#modal-overlay').fadeToggle();
-	$('#recommendations-modal').toggle();
+var showModal = function(modalSelector) {
+	$('#modal-overlay').fadeIn()
+	$(modalSelector.data).show()
+}
+
+var hideModal = function() {
+	$('#modal-overlay, #recommendations-modal, #books-modal').fadeOut()
+}
+
 function hideSlideshowExceptFirstProject() {
 	$('.projects li').slice(1).hide()
 }
