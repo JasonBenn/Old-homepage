@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src='javascripts/main.js'></script>
+    <script src='javascripts/browserified-markdown.js'></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -21,10 +22,11 @@
         <h1>Hi, I'm Jason Benn!</h1>
         <p>I'm a full stack web developer living in San Francisco.</p>
         <p>I'm not great at describing myself, so <a href="#" class="recommendations links">check out what others had to say instead</a>.</p>
-        <p>Check out some of my projects below, then <a href="#contact" class='links'>get in touch</a>.</p>
+        <!-- <p>Check out some of my projects below, then <a href="#contact" class='links'>get in touch</a>.</p> -->
+        <p>This site is under construction. Check this space after Thursday, August 22nd to see my project portfolio!</p>
       </div>
     </header>
-    <div class="container">
+    <div hidden class="container">
       <section id="macbook">
         <div class="screen">
           <span>
@@ -33,7 +35,7 @@
         </div>
         <div class="pad"></div>
       </section>
-      <section class="macbook-caption">
+      <section class="macbook-caption" markdown="1">
         <h2>Feature: Instant Search</h2>
         <p>Inspiration: Google Instant Search</p>
         <ul>
@@ -46,38 +48,38 @@
           <h2>Raise Your Hand</h2>
           <p>Final project for Dev Bootcamp</p>
         </div>
-        <div class='accordion-content'>
+        <div hidden class='accordion-content'>
           <ul>
-            <li>Feature: Instant Search</li>
-            <li>Feature: Video Player</li>
-            <li>Feature: Lesson Creation Wizard</li>
-            <li>Search Performance</li>
-            <li>Code Quality</li>
+            <li data-content='a1'>Feature: Instant Search</li>
+            <li data-content='a2'>Feature: Video Player</li>
+            <li data-content='a3'>Feature: Lesson Creation Wizard</li>
+            <li data-content='a4'>Search Performance</li>
+            <li data-content='a5'>Code Quality</li>
           </ul>
         </div>
         <div class='accordion-header'>
           <h2>Side Projects</h2>
           <p>Projects created for fun</p>
         </div>
-        <div class='accordion-content'>
+        <div hidden class='accordion-content'>
           <ul>
-            <li>Maptime</li>
-            <li>Interviews with Steve</li>
-            <li>Open source contributions: Exercism.io</li>
-            <li>Personal site</li>
+            <li data-content='b1'>Maptime</li>
+            <li data-content='b2'>Interviews with Steve</li>
+            <li data-content='b3'>Open source contributions: Exercism.io</li>
+            <li data-content='b4'>Personal site</li>
           </ul>
         </div>
         <div class='accordion-header'>
           <h2>One-offs</h2>
           <p>Projects created to explore specific concepts</p>
         </div>
-        <div class='accordion-content'>
+        <div hidden class='accordion-content'>
           <ul>
-            <li>Photo Overflow</li>
-            <li>Twitter Job Scheduler</li>
-            <li>Object-oriented JavaScript</li>
-            <li>Node.js</li>
-            <li>SQL/Schema Design</li>
+            <li data-content='c1'>Photo Overflow</li>
+            <li data-content='c2'>Twitter Job Scheduler</li>
+            <li data-content='c3'>Object-oriented JavaScript</li>
+            <li data-content='c4'>Node.js</li>
+            <li data-content='c5'>SQL/Schema Design</li>
           </ul>
         </div>
       </section>
@@ -108,5 +110,20 @@
     <hr>
     <p>"Jason was ridiculously patient with me and took the     time to explain errors in depth. The thing I like most is that he takes the time to really research things and understand why they are happening rather than just trying to get the answer and move on."</p>
     <p>-Eric Allen, co-boot at DBC, from <a href="http://iericallen.tumblr.com/post/50970215952/working-with-yoda">this blog post</a></p>
+  </div>
+  <div hidden>
+    <div class='a1'>
+      <h2>Feature: Instant Search</h2>
+      <p>Inspiration: Google Instant Search</p>
+      <ul>
+        <li>Real-time fuzzy search</li>
+        <li>Time per query was improved from 30 seconds to 300 milliseconds</li>
+      </ul>
+    </div>
+    <span class="b2">
+      ### Interviews with Steve
+      * Eerily lifelike interview practice, featuring text-to-speech and JavaScript animations
+      * Built during Dev Bootcamp Chicago's first hackathon, which I organized
+    </span>
   </div>
 </html>
