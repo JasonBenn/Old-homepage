@@ -1,47 +1,64 @@
+/*** RESET ***/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*** HEADER ***/
+
+header {
+	background-color: #F9F9F9;
+}
+
+.header-container {
+	width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.header-container p {
+	margin: 0;
+	line-height: 1.8em;
+}
+
 h1 {
-	vertical-align: 30px;
-	display: inline;
-	padding-left: 20px;
-	margin-bottom: 50px;
+	margin: 0;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 	font-size: 60px;
 	color: #333;
 }
 
-h1 span {
-	font-weight: 800;
+/*** TEXT CONTENT ***/
+
+.container {
+	width: 600px;
+	margin: 50px auto;
 }
 
-img {
-	margin-left: 20px;
-	height: 100px;
-	width: 100px;
-	border-radius: 100px;
-	border: 5px solid #444;
-}
-
-h2, h3, h4 {
+* {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	margin-bottom: 5px;
+	color: #444;
+	/*font-weight: 500;*/
+	/*font-size: 16px;*/
+	/*margin-bottom: 5px;*/
 }
 
-h3 {
+/*h3 {
 	font-size: 18px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #DCDCDC;
 	margin-bottom: 10px;
 	color: rgb(208, 0, 99);
-}
-
-h2, h4 {
-	color: #444;
-}
+}*/
 
 p, a, li {
-	font-family: 'Open Sans', sans-serif;
 	color: #666;
 	font-weight: 300;
 	line-height: 135%;
@@ -53,7 +70,6 @@ p, a, li {
 }
 
 a {
-	text-decoration: none;
 	color: #666;
 }
 
@@ -75,16 +91,26 @@ p a:hover {
 	padding: 20px;
 }
 
-footer {
-	text-align: center;
-	clear: both;
-	height: 100px;
+/*** FOOTER ***/
+
+#contact p {
+	color: #F9F9F9;
+	font-size: 18px;
+	margin-bottom: 40px;
 }
 
-footer i {
+#contact {
+	text-align: center;
+	padding: 60px;
+	clear: both;
+	background-color: #7EC9AC;
+}
+
+#contact i {
 	margin: 0 25px;
 	padding: 0 25px;
 	font-size: 45px;
+	min-width: 46px;
 	position: relative;
 }
 
@@ -95,7 +121,7 @@ i p {
 	text-align: center;
 	position: absolute;
 	top: 50%;
-	color: #666;
+	/*color: #222;*/
 }
 
 i:hover {
@@ -106,17 +132,15 @@ i:hover p {
 	left: 0;
 }
 
+/*** BACKGROUND ***/
+
 html {
-  background-color: #000000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ffffff), to(#DCDCDC));
-  background: -webkit-radial-gradient(circle, #ffffff, #DCDCDC);
-  background: -moz-radial-gradient(circle, #ffffff, #DCDCDC);
-  background: -ms-radial-gradient(circle, #ffffff, #DCDCDC);
+  background-color: white;
   width: 100%;
   height: 100%;
 }
+
+/*** MODAL ***/
 
 #modal-overlay {
   position: fixed ;
@@ -135,7 +159,6 @@ html {
   background: -ms-radial-gradient(circle, #ffffff, #291a49);
 }
 
-
 #recommendations-modal {
   padding: 20px;
   border: 1px solid #EAEEFA;
@@ -147,19 +170,113 @@ html {
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-	z-index: 2;
+	z-index: 3;
 	position: fixed;
-	top: 50%;
-	height: 444px;
-	margin-top: -242px;
+	overflow: scroll;
 	left: 50%;
 	margin-left: -320px;
+	top: 10%;
+	height: 80%;
 	width: 600px;
 }
 
-li {
-	margin-bottom: 15px;
+/*** MACBOOK ***/
+
+#macbook {
+	left: 50%;
+	margin: 50px 0;
+	margin-left: -163px;
+	position: relative;
 }
+
+#macbook img {
+	position: relative;
+	top: 15px;
+	/*width: 485px;*/
+	width: 287px;
+	/*height: 300px;*/
+	height: 180px;
+}
+
+#macbook .screen:before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    width: 326px;
+    height: 213px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(to bottom,  rgba(213,213,213,1) 57%,rgba(155,155,155,1) 100%);
+}
+
+#macbook .screen {
+    display: block;
+    width: 320px;
+    height: 210px;
+    background: #202020;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 2;
+}
+
+#macbook .screen:after {
+    content: "";
+    display: block;
+    width: 285px;
+    height: 180px;
+    background: #fff;
+    margin: 0 auto;
+    top: -31em;
+    left: .1em;
+    position: relative;
+    background: radial-gradient(center, ellipse cover, rgba(86,48,108,1) 46%,rgba(21,11,36,1) 100%);
+}
+
+#macbook .screen span {
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -13.2em;
+    left: 1.12em;
+    border-top-right-radius: 8px;
+    z-index: 3;
+    background: linear-gradient(45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0.6) 100%);
+}
+
+#macbook .pad {
+    display: block;
+    width: 366px;
+    height: 18px;
+    left: -1.5em;
+    position: relative;
+    background: #e3e3e3;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0px -4px 10px rgba(141,141,141,0.5),
+                   inset 0px -3px 1px rgba(141,141,141,0.5),
+                   inset -18px -3px 10px rgba(141,141,141,0.2);
+}
+
+#macbook .pad:before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 7px;
+    background: red;
+    position: relative;
+    background: #bbbbbb;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 auto;
+    box-shadow: inset 0 -2px 4px #fff;
+}
+
+/*** RESPONSIVE LAYOUT ***/
 
 @media screen and (max-width: 1200px) {
  .column {
