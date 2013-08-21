@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src='javascripts/main.js'></script>
+    <script src='javascripts/browserified-markdown.js'></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -16,50 +17,87 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
-        <section id="main_content">
-          <header>
-            <img src="images/portrait.jpg" alt="">
-            <h1>JASON<span>BENN</span></h1>
-          </header>
-          <div id="slideshow"></div>
-
-          <div class="column">
-            <h3>A little about me...</h3>
-            <h4>I am a web developer</h4>
-            <p>From front to back.  I am as enthusiastic while designing a pixel-perfect landing page with CSS as I am while optimizing the performance of a fuzzy search algorithm.  I am always coding!</p>
-
-            <h4>I am always seeking learning opportunities</h4>
-            <p>My top priority is to always be improving my skill and knowledge as a developer.  I look for learning opportunities in every task and interaction, no matter how big or small.</p>
-
-            <h4>I've been busy</h4>
-            <p>I recently attended <a class='links' target='_blank' href="http://devbootcamp.com/">Dev Bootcamp</a>, and spent about 1,000 hours coding in just 12 weeks.  I have never had a more intense or effective learning experience in my entire life.  I turned down a job at Fortune's #5 Best Company to Work For to do it.  It was the best decision I've ever made.</p>
-          </div>
-
-          <div class="column">
-            <h3>...and a little about you.</h3>
-            <h4>You need a quick learner and a hard worker</h4>
-            <p>I'm systematic and diligent in my self-education.  I devour textbooks whole.  In the last four months, I've read around 3,000 pages of technical literature.</p>
-
-            <h4>You need a team player</h4>
-            <p>Dev Bootcamp emphasizes developer soft skills.  In addition to practicing empathy, kindness, and giving and receiving feedback, we also spent most of our time in pairs.  <a class='links recommendations'>Here is some anonymous feedback I received after learning how to be a better teammate</a>.</p>
-
-            <h4>You want someone with passion!</h4>
-            <p>I really love this stuff!  I have a deep desire to become a great engineer.</p>
-          </div>
-        <footer>
-          <a target='_blank' href="https://github.com/JasonBenn"><i class="icon-github-alt" id='github'><p>Github</p></i></a>
-          <a target='_blank' href="http://www.linkedin.com/pub/jason-benn/33/168/bb8"><i class="icon-linkedin"><p>LinkedIn</p></i></a>
-          <a target='_blank' href="resume.pdf"><i class="icon-file-text-alt"><p>Resume</p></i></a>
-          <a href="mailto:jasoncbenn@gmail.com"><i class="icon-envelope-alt"><p>Email</p></i></a>
-        </footer>
+    <header>
+      <div class="header-container">
+        <h1>Hi, I'm Jason Benn!</h1>
+        <p>I'm a full stack web developer living in San Francisco.</p>
+        <p>I'm not great at describing myself, so <a href="#" class="recommendations links">check out what others had to say instead</a>.</p>
+        <!-- <p>Check out some of my projects below, then <a href="#contact" class='links'>get in touch</a>.</p> -->
+        <p>This site is under construction. Check this space after Thursday, August 22nd to see my project portfolio!</p>
       </div>
+    </header>
+    <div hidden class="container">
+      <section id="macbook">
+        <div class="screen">
+          <span>
+            <img src="images/raiseyourhand.png" alt="">
+          </span>
+        </div>
+        <div class="pad"></div>
+      </section>
+      <section class="macbook-caption" markdown="1">
+        <h2>Feature: Instant Search</h2>
+        <p>Inspiration: Google Instant Search</p>
+        <ul>
+          <li>Real-time fuzzy search</li>
+          <li>Time per query was improved from 30 seconds to 300 milliseconds</li>
+        </ul>
+      </section>
+      <section class="accordion">
+        <div class='accordion-header'>
+          <h2>Raise Your Hand</h2>
+          <p>Final project for Dev Bootcamp</p>
+        </div>
+        <div hidden class='accordion-content'>
+          <ul>
+            <li data-content='a1'>Feature: Instant Search</li>
+            <li data-content='a2'>Feature: Video Player</li>
+            <li data-content='a3'>Feature: Lesson Creation Wizard</li>
+            <li data-content='a4'>Search Performance</li>
+            <li data-content='a5'>Code Quality</li>
+          </ul>
+        </div>
+        <div class='accordion-header'>
+          <h2>Side Projects</h2>
+          <p>Projects created for fun</p>
+        </div>
+        <div hidden class='accordion-content'>
+          <ul>
+            <li data-content='b1'>Maptime</li>
+            <li data-content='b2'>Interviews with Steve</li>
+            <li data-content='b3'>Open source contributions: Exercism.io</li>
+            <li data-content='b4'>Personal site</li>
+          </ul>
+        </div>
+        <div class='accordion-header'>
+          <h2>One-offs</h2>
+          <p>Projects created to explore specific concepts</p>
+        </div>
+        <div hidden class='accordion-content'>
+          <ul>
+            <li data-content='c1'>Photo Overflow</li>
+            <li data-content='c2'>Twitter Job Scheduler</li>
+            <li data-content='c3'>Object-oriented JavaScript</li>
+            <li data-content='c4'>Node.js</li>
+            <li data-content='c5'>SQL/Schema Design</li>
+          </ul>
+        </div>
+      </section>
     </div>
+    <footer id='contact'>
+      <p>I am currently available for interviews.  Let's talk!</p>
+      <a target='_blank' href="https://github.com/JasonBenn"><i class="icon-github-alt" id='github'><p>Github</p></i></a>
+      <a target='_blank' href="http://www.linkedin.com/pub/jason-benn/33/168/bb8"><i class="icon-linkedin"><p>LinkedIn</p></i></a>
+      <a target='_blank' href="resume.pdf"><i class="icon-file-text-alt"><p>Resume</p></i></a>
+      <a href="mailto:jasoncbenn@gmail.com"><i class="icon-envelope-alt"><p>Email</p></i></a>
+    </footer>
   </body>
-
   <div hidden id="modal-overlay"></div>
   <div hidden id="recommendations-modal">
+    <p>"...the dream Dev Bootcamp student. An incredibly hard worker, very driven, super talented and motivated"</p>
+    <p>-Dave Hoover, founder of Dev Bootcamp Chicago</p>
+    <hr>
+    <p>At Dev Bootcamp, there was a major emphasis on developer soft skills, including pairing. To this end we provided daily and anonymous constructive feedback to each other. Here is some of that feedback:</p>
     <ul>
       <li>"Working with you was great! We had a ton of fun completing the day's challenges."</li>
       <li>"Your technical chops are superb and you match that with drive and patience for your less-experienced peers (myself among them). I really like how you work efficiently yet there's no sense of rushing."</li>
@@ -69,5 +107,23 @@
       <li>"Your mind wraps around the code in ways that amaze me. I'd be overjoyed to work with you anytime."</li>
       <li>"Probably the best pair I have had so far. You have tons of technical knowledge but also hear out your (mostly) not as advanced pair. You make other people feel like you are learning from them as well."</li>
     </ul>
+    <hr>
+    <p>"Jason was ridiculously patient with me and took the     time to explain errors in depth. The thing I like most is that he takes the time to really research things and understand why they are happening rather than just trying to get the answer and move on."</p>
+    <p>-Eric Allen, co-boot at DBC, from <a href="http://iericallen.tumblr.com/post/50970215952/working-with-yoda">this blog post</a></p>
+  </div>
+  <div hidden>
+    <div class='a1'>
+      <h2>Feature: Instant Search</h2>
+      <p>Inspiration: Google Instant Search</p>
+      <ul>
+        <li>Real-time fuzzy search</li>
+        <li>Time per query was improved from 30 seconds to 300 milliseconds</li>
+      </ul>
+    </div>
+    <span class="b2">
+      ### Interviews with Steve
+      * Eerily lifelike interview practice, featuring text-to-speech and JavaScript animations
+      * Built during Dev Bootcamp Chicago's first hackathon, which I organized
+    </span>
   </div>
 </html>
