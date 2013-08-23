@@ -49,7 +49,7 @@ p, a, li {
 	line-height: 135%;
 }
 
-p a:hover {
+a:hover {
 	border-bottom: 1px solid #222;
 	cursor: pointer;
 }
@@ -72,7 +72,7 @@ p a:hover {
 #contact p {
 	font-size: 18px;
 	margin-bottom: 40px;
-  color: #F7F1E4;
+  color: #F9F9F9;
 }
 
 #contact {
@@ -83,7 +83,7 @@ p a:hover {
 }
 
 #contact i {
-	color: #F7F1E4;
+	color: #F9F9F9;
   margin: 0 25px;
   padding: 0 25px;
   font-size: 45px;
@@ -104,13 +104,13 @@ i p {
   width: 100%;
   text-align: center;
   position: absolute;
-  color: #F7F1E4;
+  color: #F9F9F9;
   top: 70%;
   font-weight: 300;
 }
 
-i:hover {
-	color: black;
+#contact i:hover, #contact i:hover p {
+	color: #222;
 }
 
 /*** BACKGROUND ***/
@@ -295,7 +295,7 @@ html {
 .accordion h2 {
   font-size: 1.2em;
   font-weight: 400;
-  color: #F7F1E4;
+  color: #F9F9F9;
   margin-left: 25px;
   margin-bottom: 8px;
 }
@@ -303,13 +303,13 @@ html {
 .accordion p {
   font-style: italic;
   margin-top: 0;
-  color: #F7F1E4;
+  color: #F9F9F9;
   margin-left: 25px;
 }
 
 .accordion li {
   padding-left: 25px;
-  color: #F7F1E4;
+  color: #F9F9F9;
   line-height: 1.5em;
 }
 
