@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('.recommendations, #modal-overlay').click(toggleModal)
 	$('.accordion-header').click(accordion)
 	$('.accordion-content li').click(showDetails)
-	showDetails('.all-captions .a1')
+	$('.accordion-content:first li:first-child').trigger('click')
 })
 
 function toggleModal() {
@@ -13,8 +13,8 @@ function accordion() {
 	$(this).next().slideToggle()
 }
 
-function showDetails(selector) {
-	var contentSelector = selector || '.all-captions .' + $(this).attr('data-content')
+function showDetails() {
+	var contentSelector = '.all-captions .' + $(this).attr('data-content')
 	var image = $(contentSelector + ' .image').clone()
 	var caption = $(contentSelector + ' .caption-html').clone()
 	$('.macbook-caption, .macbook .screen span').fadeOut(function() {
