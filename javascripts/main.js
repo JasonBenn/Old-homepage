@@ -8,6 +8,5 @@ function toggleModal() {
 }
 
 function accordion() {
-	$('.accordion-content').hide();
-	$(this).next().show()
+	$(this).next().slideToggle()
 }
