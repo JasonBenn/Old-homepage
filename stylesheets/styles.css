@@ -308,7 +308,24 @@ html {
 }
 
 .accordion li {
+  padding-left: 25px;
   color: #F7F1E4;
+  line-height: 1.5em;
+}
+
+.accordion-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.accordion li:hover {
+  background-color: #298361;
+}
+
+.accordion li:before {
+  content: "•  ";
+  font-weight: 600;
+  color: #298361;
 }
 
 .accordion-content {
