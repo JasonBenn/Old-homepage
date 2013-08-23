@@ -7,6 +7,7 @@ body {
 
 a {
 	text-decoration: none;
+  border-bottom: 1px dotted #888;
 }
 
 /*** HEADER ***/
@@ -46,15 +47,6 @@ p, a, li {
 	color: #666;
 	font-weight: 300;
 	line-height: 135%;
-}
-
-.links {
-	color: #222;
-	border-bottom: 1px dotted #888;
-}
-
-a {
-	color: #666;
 }
 
 p a:hover {
@@ -100,6 +92,10 @@ p a:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+#contact a {
+  border-bottom: none;
 }
 
 i p {
@@ -152,9 +148,9 @@ html {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 	z-index: 3;
 	position: fixed;
 	overflow: scroll;
@@ -262,6 +258,7 @@ html {
   border: 1px dotted gray;
   border-radius: 8px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .macbook-caption h2 {
@@ -312,9 +309,6 @@ html {
 
 .accordion li {
   color: #F7F1E4;
-}
-
-.accordion li {
 }
 
 .accordion-content {
