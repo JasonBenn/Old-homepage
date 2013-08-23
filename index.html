@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src='javascripts/main.js'></script>
-    <script src='javascripts/browserified-markdown.js'></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -29,7 +28,7 @@
       <section class="macbook">
         <div class="screen">
           <span>
-            <img src="images/raiseyourhand.png" alt="">
+
           </span>
         </div>
         <div class="pad"></div>
@@ -41,11 +40,11 @@
         </div>
         <div class='accordion-content'>
           <ul>
-            <li data-content='a1'>Feature: Instant Search</li>
-            <li data-content='a2'>Feature: Video Player</li>
-            <li data-content='a3'>Feature: Lesson Creation Wizard</li>
-            <li data-content='a4'>Search Performance</li>
-            <li data-content='a5'>Code Quality</li>
+            <li data-content='a1'>Instant Search</li>
+            <li data-content='a2'>Video Player</li>
+            <li data-content='a3'>Lesson Creation Wizard</li>
+            <li data-content='a4'>Testing</li>
+            <li data-content='a5'>Search Performance</li>
           </ul>
         </div>
         <div class='accordion-header'>
@@ -56,8 +55,8 @@
           <ul>
             <li data-content='b1'>Maptime</li>
             <li data-content='b2'>Interviews with Steve</li>
-            <li data-content='b3'>Open source contributions: Exercism.io</li>
-            <li data-content='b4'>Personal site</li>
+            <li data-content='b3'>Personal site</li>
+            <li data-content='b4'>Open source contributions: Exercism.io</li>
           </ul>
         </div>
         <div class='accordion-header'>
@@ -66,23 +65,15 @@
         </div>
         <div hidden class='accordion-content'>
           <ul>
-            <li data-content='c1'>Photo Overflow</li>
-            <li data-content='c2'>Twitter Job Scheduler</li>
-            <li data-content='c3'>Object-oriented JavaScript</li>
-            <li data-content='c4'>Node.js</li>
-            <li data-content='c5'>SQL/Schema Design</li>
+            <li data-content='c1'>Twitter Job Scheduler</li>
+            <li data-content='c2'>Ask About Photos</li>
+            <li data-content='c3'>Logic-based game AI</li>
+            <li data-content='c4'>SQL & Schema Design</li>
           </ul>
         </div>
       </section>
 
-      <section class="macbook-caption" markdown="1">
-        <h2>Feature: Instant Search</h2>
-        <p>Inspiration: Google Instant Search</p>
-        <ul>
-          <li>Real-time fuzzy search</li>
-          <li>Time per query was improved from 30 seconds to 300 milliseconds</li>
-        </ul>
-      </section>
+      <section class="macbook-caption"></section>
     </div>
     <footer id='contact'>
       <p>I am currently available for interviews.  Let's talk!</p>
@@ -111,19 +102,214 @@
     <p>"Jason was ridiculously patient with me and took the     time to explain errors in depth. The thing I like most is that he takes the time to really research things and understand why they are happening rather than just trying to get the answer and move on."</p>
     <p>-Eric Allen, co-boot at DBC, from <a href="http://iericallen.tumblr.com/post/50970215952/working-with-yoda">this blog post</a></p>
   </div>
-  <div hidden>
+  <section hidden class='all-captions'>
     <div class='a1'>
-      <h2>Feature: Instant Search</h2>
-      <p>Inspiration: Google Instant Search</p>
-      <ul>
-        <li>Real-time fuzzy search</li>
-        <li>Time per query was improved from 30 seconds to 300 milliseconds</li>
-      </ul>
+      <section class='image'>
+        <img src="images/raiseyourhand.png" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="instantsearch">Instant Search</h3>
+
+        <ul>
+        <li>Inspired by Google Instant Search</li>
+        <li>Case-insensitive fuzzy search spanning multiple words</li>
+        <li>Time per keypress improved from 30 seconds to fractions of a second (see Search Performance)</li>
+        <li><a href="http://raiseyourhand.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/raiseyourhand">Source</a></li>
+        </ul>
+      </section>
     </div>
-    <span class="b2">
-      ### Interviews with Steve
-      * Eerily lifelike interview practice, featuring text-to-speech and JavaScript animations
-      * Built during Dev Bootcamp Chicago's first hackathon, which I organized
-    </span>
-  </div>
+
+    <div class='a2'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="videoplayer">Video Player</h3>
+
+        <ul>
+        <li>Video player built in JavaScript using YouTube API</li>
+        <li>Automatically linked to a live, dynamic question feed</li>
+        <li>Questions intelligently snap to top of feed window</li>
+        <li><a href="http://raiseyourhand.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/raiseyourhand">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='a3'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="lessoncreationwizard">Lesson Creation Wizard</h3>
+
+        <ul>
+        <li>Create and rearrange video-based educational playlists</li>
+        <li><a href="http://raiseyourhand.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/raiseyourhand">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='a4'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="testing">Testing</h3>
+
+        <ul>
+        <li>Using RSpec, FactoryGirl, Shoulda, Capybara</li>
+        <li>Integration and unit tests</li>
+        <li>To avoid hitting YouTube API during tests, stubbed JSON responses (with FakeWeb)</li>
+        <li><a href="http://raiseyourhand.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/raiseyourhand/tree/master/spec">Test code source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='a5'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="searchperformance">Search Performance</h3>
+
+        <ul>
+        <li>Strategies used:
+        <ul><li>Database indices</li>
+        <li>Action caching using memcached and Dalli</li>
+        <li>Fragment caching using memcached and Dalli</li>
+        <li>Counter caching in ActiveRecord</li>
+        <li>Custom SQL (SELECT DISTINCT)</li>
+        <li>AJAX request throttling using setTimeout()</li></ul></li>
+        <li><a href="http://raiseyourhand.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/raiseyourhand">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='b1'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="maptime">Maptime</h3>
+
+        <ul>
+        <li>Similar to Google Maps, but displays the most efficient route through multiple waypoints</li>
+        <li><a href="http://maptime.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/FastMap">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='b2'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="interviewswithsteve">Interviews with Steve</h3>
+
+        <ul>
+        <li>Eerily lifelike interview practice, featuring text-to-speech and JavaScript animations</li>
+        <li>Built during Dev Bootcamp Chicago's first hackathon, which I organized</li>
+        <li><a href="http://interview-with-stephen.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/JasonBenn/interview_with_steve_hawking">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='b3'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="thiswebsite">Personal site</h3>
+
+        <ul>
+        <li>That is, this guy. Meta.</li>
+        <li><a href="https://github.com/JasonBenn/JasonBenn.github.io">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='b4'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="opensourcecontributionexercismio">Open source contributions: Exercism.io</h3>
+
+        <ul>
+        <li>Navigated unfamiliar technology stack and contributed (MongoDB, Backbone, Node.js)</li>
+        <li>Implemented comment editor</li>
+        <li><a href="http://exercism.io/">Exercism.io</a></li>
+        <li><a href="https://github.com/kytrinyx/exercism.io/commits?author=JasonBenn">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='c1'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="twitterjobscheduler">Twitter Job Scheduler</h3>
+
+        <ul>
+        <li>Twitter OAuth</li>
+        <li>Background jobs using Sidekiq (a Redis-based queue)</li>
+        <li><a href="https://github.com/JasonBenn/tweet_later">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='c2'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="askaboutphotos">Ask About Photos</h3>
+
+        <ul>
+        <li>Stack Overflow for photographers</li>
+        <li>Rails, CarrierWave, Amazon S3, Bootstrap, and memcache</li>
+        <li>Built using separate staging and production environments</li>
+        <li><a href="http://ask-about-photos.herokuapp.com/">Site</a></li>
+        <li><a href="https://github.com/codesliced/ask-about-photos">Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='c3'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="logicbasedgameai">Logic-based game AI</h3>
+
+        <ul>
+        <li>Built an unbeatable algorithm for Tic-Tac-Toe in Ruby</li>
+        <li>Thousands of times faster than popular MinMax algorithm</li>
+        <li><a href="https://github.com/JasonBenn/unbeatable_tictactoe">Source and benchmark results</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class='c4'>
+      <section class='image'>
+        <img src="__placeholder__" alt="">
+      </section>
+      <section class="caption-html">
+        <h3 id="sqlschemadesign">SQL &amp; Schema Design</h3>
+
+        <ul>
+        <li><a href="https://gist.github.com/JasonBenn/17c814c4949683c16fbe#file-poll_db_2-_modifying_data_solution-rb">Example SQL code</a></li>
+        <li><a href="https://gist.github.com/JasonBenn/eb4b97032868f595186e#file-poll_db_1-_queries_solution-rb">More example SQL code</a></li>
+        </ul>
+      </section>
+    </div>
+  </section>
 </html>
