@@ -311,6 +311,11 @@ html {
   padding-left: 25px;
   color: #F9F9F9;
   line-height: 1.5em;
+  cursor: pointer;
+}
+
+.accordion-header {
+  cursor: pointer;
 }
 
 .accordion-content ul {
