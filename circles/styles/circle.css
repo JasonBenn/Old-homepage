@@ -37,3 +37,7 @@ h1 {
 	height: inherit;
 	transition: box-shadow 0.75s;
 }
+
+.circle:after {
+	-webkit-transform: rotate(45deg);
+}
