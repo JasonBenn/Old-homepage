@@ -1,0 +1,38 @@
+ol {
+	-webkit-user-select: none;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
+
+li {
+	position: relative;
+	-webkit-user-select: none;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-size: 1.6em;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	padding: 5px;
+	margin: 20px;
+	line-height: 2em;
+	border-radius: 5px;
+	background-color: rgb(52, 152, 219);
+	box-shadow: 0 6px 0 black;
+	transition: all 0.1s;
+	top: 0;
+}
+
+
+li:hover {
+	background-color: rgb(52, 152, 219);
+	box-shadow: 0 4px 0 black;
+	top: 2px;
+}
+
+li:active {
+	box-shadow: 0 0 0 black;
+	top: 6px;
+}

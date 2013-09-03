@@ -1,0 +1,39 @@
+.circle {
+	border-radius: 100%;
+	position: relative;
+	margin: 5% auto;
+	width: 15em;
+	height: 15em;
+}
+
+h1 {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	color: #888;
+	font-size: 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 5%;
+}
+
+.circle h1 {
+	line-height: 9.5em;
+	color: rgba(189, 185, 199, 0);
+	transition: color 0.75s ease-in-out;
+}
+
+.circle:hover h1 {
+	color: rgba(189, 185, 199, 1);
+}
+
+.circle:before,
+.circle:after {
+	border-radius: 100%;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	transition: box-shadow 0.75s;
+}

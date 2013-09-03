@@ -1,0 +1,17 @@
+.fourth:before,
+.fourth:after {
+	border-radius: 0;
+	box-shadow: inset 10em 0 0 rgba(243, 156, 18, 0.25),
+							inset 0 10em 0 rgba(241, 196, 15, 0.25),
+							inset 0 -10em 0 rgba(46, 204, 113, 0.25),
+							inset -10em 0 0 rgba(52, 152, 219, 0.25);
+}
+
+.fourth:hover:before,
+.fourth:hover:after {
+	border-radius: 0;
+	box-shadow: inset 2em 0 0 rgba(231, 76, 60, 0.25),
+							inset 0 2em 0 rgba(155, 89, 182, 0.25),
+							inset 0 -2em 0 rgba(22, 160, 133, 0.25),
+							inset -2em 0 0 rgba(52, 73, 94, 0.25);
+}
