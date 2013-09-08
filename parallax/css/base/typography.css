@@ -1,0 +1,14 @@
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	color: green;
+	font-family: 'Playfair Display', serif;
+}
+
+p {
+	line-height: 1.8em;
+	color: #555;
+	font-family: 'Open Sans', sans-serif;
+}
