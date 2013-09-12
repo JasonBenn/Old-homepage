@@ -13,14 +13,14 @@
 
 .header h1 {
 	display: inline-block;
-	width: 280px;
+	width: 210px;
 	color: white;
 	opacity: 1;
 	text-align: left;
 	position: relative;
 	left: 50%;
-	margin-left: -140px;
-	transition: all 0.5s;
+	margin-left: -105px;
+	transition: all 0.25s;
 }
 
 .header-small h1 {

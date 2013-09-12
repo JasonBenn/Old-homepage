@@ -4,11 +4,14 @@ h1, p {
 
 h1 {
 	color: green;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 
 p {
 	line-height: 1.8em;
 	color: #555;
-	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
 }
