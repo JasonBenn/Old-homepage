@@ -5,8 +5,8 @@ ctx.font = '4em Helvetica'
 var hue = 0,
     phrase = 'CLINKLE',
     letterSpacing = 20,
-    initialXPos = ((ctx.canvas.width - (ctx.measureText(phrase).width + (phrase.length - 1) * letterSpacing)) / 2),
-    yPos = ctx.canvas.height/2;
+    initialX = ((ctx.canvas.width - (ctx.measureText(phrase).width + (phrase.length - 1) * letterSpacing)) / 2),
+    y = ctx.canvas.height/2;
 
 ctx.fillStyle = 'rgba(0, 0, 0, 1)';
 drawBackground()
@@ -19,8 +19,8 @@ setInterval(function() {
 setInterval(drawBackground, 150)
 
 function gleam() {
-  eachLetter(function(letter, xPos, index) {
-    setTimeout(draw.bind(null, letter, xPos, yPos), 100 * index)
+  eachLetter(function(letter, x, index) {
+    setTimeout(draw.bind(null, letter, x, y), 100 * index)
   })
 }
 
@@ -39,15 +39,15 @@ function drawBackground() {
   ctx.lineWidth = 1
   ctx.strokeStyle = 'grey'
 
-  eachLetter(function(letter, xPos) {
-    ctx.strokeText(letter, xPos, yPos);
+  eachLetter(function(letter, x) {
+    ctx.strokeText(letter, x, y);
   })
 }
 
 function eachLetter(callback) {
-  var xPos = initialXPos;
+  var x = initialX;
   phrase.split('').forEach(function(letter, index) {
-    callback(letter, xPos, index)
-    xPos += ctx.measureText(letter).width + letterSpacing
+    callback(letter, x, index)
+    x += ctx.measureText(letter).width + letterSpacing
   })
 }
