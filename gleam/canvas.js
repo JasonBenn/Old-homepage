@@ -12,10 +12,7 @@ ctx.fillStyle = 'rgba(0, 0, 0, 1)';
 drawBackground()
 ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
 
-setInterval(function() {
-  gleam();
-}, 2500)
-
+setInterval(gleam, 2500)
 setInterval(drawBackground, 150)
 
 function gleam() {
