@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("public/avenir_light.woff") format('woff');
+  font-weight: 100
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("public/avenir_medium.woff") format('woff');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("public/avenir_heavy.woff") format('woff');
+  font-weight: 700
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+body {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 15px;
+  line-height: 25px
+  color: #222427;
+  background: #f7f6f5;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: 100%;
+  background-position: 0 -75px;
+  background-repeat: no-repeat;
+  -webkit-animation: fadein 1s ease;
+  animation: fadein 1s ease;
+  padding: 20px
+}
+
+a {
+  text-decoration: none;
+  color: #212429;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s
+}
+
+a:hover {
+  color: #0C85AC;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s
+}
+
+h1 {
+  font-family: Avenir-Light;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px
+}
+
+h1 strong {
+  font-family: Avenir-Heavy, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto
+}
+
+.intro {
+  margin: 100px 0 100px 0;
+}
+
+.divider {
+  height: 1px;
+  background: #DDD;
+  border-bottom: #FFF solid 1px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.divider__title {
+  background: #f7f6f5;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 0px;  
+}
+
+section, aside {
+  margin-bottom: 50px;
+}
+
+.project {}
+
+.project__description {}
+
+.project__title {}
+
+.posts {}
+
+.post {}
+
+.post__category {}
+
+.post__description {}
