@@ -40,7 +40,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   body {
     font-size: 12px;
   }
@@ -49,7 +49,7 @@ body {
 section, aside {
   max-width: 600px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 3em;
 }
 
 .projects {
@@ -59,11 +59,11 @@ section, aside {
 
 a {
   text-decoration: none;
-  color: #212429;
   transition: color 0.25s;
+  color: #212429;
 }
 
-a:hover {
+a:hover { 
   color: #0C85AC;
 }
 
@@ -112,34 +112,49 @@ h1 strong {
   color: #BAADA3;
 }
 
-.projects__showcase {
+.projects {
   display: flex;
-  justify-content: space-between;
-  width: 90vw;
+  justify-content: center;
+  max-width: 90vw;
 }
 
 .project {
-  margin: 0 10px;
-  padding: 10px;
-  background: #FBFBFB;
-  border: 1px solid black;
+  /*margin: 0 5px;*/
+  padding: 1em;
   border-radius: 3px;
+  flex-basis: 100%;
+  max-width: 16em;
+  box-sizing: border-box;
+  border: 1px solid #f7f6f5;
+  transition: .2s all;
+  min-width: 12em;
+}
+
+.project:hover {
+  background: #FBFBFB;
+  border: 1px solid #BAADA3;
+}
+
+@media (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    max-width: 100%;
+    flex-basis: initial;
+  }
 }
 
 .project__image-wrapper {
-  width: 250px;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 .project__image {
   border-radius: 3px;
   width: 100%;
 }
-
-.project__description {}
-
-.project__title {}
-
-.posts {}
 
 .post {
   display: flex;
@@ -149,12 +164,12 @@ h1 strong {
   flex: 1;
   letter-spacing: 1px;
   padding-right: 20px;
-  color: #BAADA3;
 }
 
 .post__description {
   flex: 4;
   margin-bottom: 20px;
+  color: #212429;
 }
 
 .post__description h3, .project__description h3 {
@@ -165,11 +180,27 @@ h1 strong {
   margin: 8px 0;
 }
 
+.contact {
+  color #222427;
+  margin-bottom: 4em;
+  max-width: 15em;
+  font-family: Avenir-Book,Avenir-Light,sans-serif;
+  font-size: 15px;
+  color: #222427;
+  line-height: 25px;
+  text-align: center;
+}
+
+.contact a {
+  color: #0C85AC;
+}
+
 blockquote {
   margin: 0;
 }
 
 .pull-quote {
+  font-style: italic;
   text-indent: 1em;
   padding-left: 1.5em;
   border-left: 3px solid #EE4D33;
