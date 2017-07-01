@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" integrity="sha256-sxzrkOPuwljiVGWbxViPJ14ZewXLJHFJDn0bv+5hsDY=" crossorigin="anonymous" />
   <link rel="stylesheet" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jason Benn - Software Engineer</title>
@@ -20,87 +21,96 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="intro">
-      <h1><strong>Hi, I’m Jason Benn.</strong> I’m a programmer comfortable at all levels of the stack, be it the front-end, the back-end, or DevOps. I’m endlessly curious and feel happiest when I’m focused, growing, or building something for users that love what I make.</h1>
-    </section>
+  <section class="intro">
+    <h1><strong>Hi, I’m Jason Benn.</strong> I’m a programmer comfortable at all levels of the stack, be it the front-end, the back-end, or DevOps. I’m endlessly curious and feel happiest when I’m focused, growing, or building something people love.</h1>
+  </section>
 
-    <section class="projects">
-      <div class="divider">
-        <h2 class="divider__title">recent work</h2>
-      </div>
-
-      <ul>
-        <li class="project">
-          <a href="#">
-            <img src="" alt="">
-            <div class="project__description">
-              <h3 class="project__title">QA Instances</h3>
-              <p>one-click disposable deployments for work in progress code, reduces defects shipped to users.</p>
-            </div>
-          </a>
-        </li>
-
-        <li class="project">
-          <a href="#">
-            <img src="" alt="">
-            <div class="project__description">
-              <h3 class="project__title">Learn Claire de Lune</h3>
-              <p>plug your electronic piano into your computer, learn to play while surfing through a landscape designed by a Pixar artist</p>
-            </div>
-          </a>
-        </li>
-
-        <li class="project">
-          <a href="#">
-            <img src="" alt="">
-            <div class="project__description">
-              <h3 class="project__title">Paper Club</h3>
-              <p>my reviews of interesting academic work about machine learning and deep neural nets (should the link be to Github?)</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="posts">
-      
-      <div class="divider">
-        <h2 class="divider__title">writing and speaking</h2>
-      </div>
-
-      <div class="post">
-        <div class="post__category">speaking</div>
-        <div class="post__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post__category">paper review</div>
-        <div class="post__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post__category">blog post</div>
-        <div class="post__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <aside>
-      <blockquote cite="http://example.com/facts">
-        <p>Jason Benn’s transformation is nothing short of astonishing. [His] story highlights a crucial lesson: deep work is not some nostalgic affectation of of writers and early-twentieth-century philosophers. It’s instead a skill that has great value today.</p>
-        <p>— Cal Newport, <em><a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">Deep Work: Rules for Focused Success in a Distracted World</a></em></p>
-      </blockquote>
-    </aside>
-
+  <div class="divider">
+    <h2 class="divider__title">recent work</h2>
   </div>
+
+  <section class="projects">
+    <div class="projects__showcase">
+      <div class="project">
+        <a href="#">
+          <div class="project__image-wrapper">
+            <img class="project__image" src="http://www.adhamdannaway.com/wp-content/uploads/2016/08/feature-qantas-homepage-1.jpg" alt="">
+          </div>
+          <div class="project__description">
+            <h3 class="project__title">QA Instances</h3>
+            <p>one-click disposable deployments for work in progress code, reduces defects shipped to users.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/JasonBenn/learn-claire-de-lune">
+          <div class="project__image-wrapper">
+            <img class="project__image" src="http://www.adhamdannaway.com/wp-content/uploads/2016/08/feature-qantas-homepage-1.jpg" alt="">
+          </div>
+          <div class="project__description">
+            <h3 class="project__title">Learn Claire de Lune</h3>
+            <p>plug your electronic piano into your computer, learn to play while surfing through a landscape designed by a Pixar artist</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="#">
+          <div class="project__image-wrapper">
+            <img class="project__image" src="http://www.adhamdannaway.com/wp-content/uploads/2016/08/feature-qantas-homepage-1.jpg" alt="">
+          </div>
+          <div class="project__description">
+            <h3 class="project__title">Paper Club</h3>
+            <p>my reviews of interesting academic work about machine learning and deep neural nets (should the link be to Github?)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <h2 class="divider__title">writing and speaking</h2>
+  </div>
+
+  <section class="posts">
+    <div class="post">
+      <div class="post__category">speaking</div>
+      <div class="post__description">
+        <h3>Intro to QA Instances</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          </p>
+
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post__category">paper review</div>
+      <div class="post__description">
+        <h3>Intro to QA Instances</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          </p>
+
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post__category">blog post</div>
+      <div class="post__description">
+        <h3>Intro to QA Instances</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.          </p>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider--short"></div>
+
+  <aside>
+    <blockquote cite="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">
+      <p class="pull-quote">Jason Benn’s transformation is nothing short of astonishing. [His] story highlights a crucial lesson: deep work is not some nostalgic affectation of of writers and early-twentieth-century philosophers. It’s instead a skill that has great value today.</p>
+      <p>— Cal Newport, <em><a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">Deep Work: Rules for Focused Success in a Distracted World</a></em></p>
+    </blockquote>
+  </aside>
+
 </body>
 
 </html>
