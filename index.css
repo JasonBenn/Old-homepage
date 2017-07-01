@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 600px) {
@@ -70,7 +71,7 @@ a:hover {
 h1 {
   font-family: Avenir-Light;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 h1 strong {
@@ -78,7 +79,7 @@ h1 strong {
 }
 
 .intro {
-  margin: 5em 0 5em 0;
+  margin: 5em 0 3em 0;
 }
 
 .divider {
@@ -181,7 +182,6 @@ h1 strong {
 }
 
 .contact {
-  color #222427;
   margin-bottom: 4em;
   max-width: 15em;
   font-family: Avenir-Book,Avenir-Light,sans-serif;
