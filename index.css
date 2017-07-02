@@ -120,7 +120,6 @@ h1 strong {
 }
 
 .project {
-  /*margin: 0 5px;*/
   padding: 1em;
   border-radius: 3px;
   flex-basis: 100%;
@@ -129,11 +128,11 @@ h1 strong {
   border: 1px solid #f7f6f5;
   transition: .2s all;
   min-width: 12em;
+  filter: grayscale(100%);
 }
 
 .project:hover {
-  background: #FBFBFB;
-  border: 1px solid #BAADA3;
+  filter: initial;
 }
 
 @media (max-width: 600px) {
