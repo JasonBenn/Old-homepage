@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Avenir-Light";
-  src: url("public/avenir_light.woff") format('woff');
+  src: url("avenir_light.woff") format('woff');
   font-weight: 100
 }
 
 @font-face {
   font-family: "Avenir-Medium";
-  src: url("public/avenir_medium.woff") format('woff');
+  src: url("avenir_medium.woff") format('woff');
   font-weight: 500
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
-  src: url("public/avenir_heavy.woff") format('woff');
+  src: url("avenir_heavy.woff") format('woff');
   font-weight: 700
 }
 
@@ -124,7 +124,7 @@ h1 strong {
   padding: 1em;
   border-radius: 3px;
   flex-basis: 100%;
-  max-width: 16em;
+  max-width: 20em;
   box-sizing: border-box;
   border: 1px solid #f7f6f5;
   transition: .2s all;
@@ -150,6 +150,14 @@ h1 strong {
 .project__image-wrapper {
   width: 100%;
   margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  .project__image-wrapper {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 125px;
+  }
 }
 
 .project__image {
@@ -183,9 +191,9 @@ h1 strong {
 
 .contact {
   margin-bottom: 4em;
-  max-width: 15em;
-  font-family: Avenir-Book,Avenir-Light,sans-serif;
-  font-size: 15px;
+  max-width: 17em;
+  font-family: Avenir-Medium,sans-serif;
+  font-size: 18px;
   color: #222427;
   line-height: 25px;
   text-align: center;
@@ -201,7 +209,6 @@ blockquote {
 
 .pull-quote {
   font-style: italic;
-  text-indent: 1em;
   padding-left: 1.5em;
   border-left: 3px solid #EE4D33;
 }
