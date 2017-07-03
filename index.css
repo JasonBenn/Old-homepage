@@ -27,7 +27,7 @@
 
 body {
   font-family: Avenir-Book, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #222427;
   background: #f7f6f5;
@@ -41,11 +41,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 12px;
-  }
-}
 
 section, aside {
   max-width: 600px;
@@ -71,7 +66,7 @@ a:hover {
 h1 {
   font-family: Avenir-Light;
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 h1 strong {
@@ -79,7 +74,7 @@ h1 strong {
 }
 
 .intro {
-  margin: 5em 0 3em 0;
+  margin: 5em 0 2em 0;
 }
 
 .divider {
@@ -143,6 +138,7 @@ h1 strong {
   .project {
     max-width: 100%;
     flex-basis: initial;
+    filter: initial;
   }
 }
 
