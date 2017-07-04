@@ -27,6 +27,18 @@
   <meta property="fb:app_id" content="495450404120833">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101977787-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
 </head>
 
 <body>
@@ -40,37 +52,37 @@
 
   <section class="projects">
     <div class="project">
-      <a href="https://github.com/JasonBenn/qa-instances-extension">
+      <a onclick="trackOutboundLink('https://github.com/JasonBenn/qa-instances-extension/blob/master/README.md'); return false;" href='https://github.com/JasonBenn/qa-instances-extension/blob/master/README.md'>
         <div class="project__image-wrapper">
           <img class="project__image" src="public/qai-thumb.png" alt="">
       </a>
       </div>
       <div class="project__description">
-        <a href="https://github.com/JasonBenn/qa-instances-extension/blob/master/README.md"><h3 class="project__title">QA Instances</h3></a>
+        <a onclick="trackOutboundLink('https://github.com/JasonBenn/qa-instances-extension/blob/master/README.md'); return false;" href="https://github.com/JasonBenn/qa-instances-extension/blob/master/README.md"><h3 class="project__title">QA Instances</h3></a>
         <p>Deploy the code in any GitHub pull request to a complete, disposable instance. Each instance has a unique URL you can share. Brilliant for catching bugs before they ship to users.</p>
       </div>
     </div>
 
     <div class="project">
-      <a href="https://github.com/JasonBenn/learn-claire-de-lune">
+      <a onclick="trackOutboundLink('https://github.com/JasonBenn/learn-claire-de-lune/blob/master/README.md'); return false;" href='https://github.com/JasonBenn/learn-claire-de-lune/blob/master/README.md'>
         <div class="project__image-wrapper">
           <img class="project__image" src="public/cdl-thumb.jpg" alt="">
         </div>
       </a>
       <div class="project__description">
-        <a href="https://github.com/JasonBenn/learn-claire-de-lune/blob/master/README.md"><h3 class="project__title">Learn Claire de Lune</h3></a>
+        <a onclick="trackOutboundLink('https://github.com/JasonBenn/learn-claire-de-lune/blob/master/README.md'); return false;" href="https://github.com/JasonBenn/learn-claire-de-lune/blob/master/README.md"><h3 class="project__title">Learn Claire de Lune</h3></a>
         <p>Plug your electronic piano into your computer with a USB-to-MIDI cable, get live feedback as you play the best song ever written. No music theory required, includes several difficulty levels.</p>
       </div>
     </div>
 
     <div class="project">
-      <a href="https://medium.com/@jasoncbenn">
+      <a onclick="trackOutboundLink('https://medium.com/@jasoncbenn'); return false;" href="https://medium.com/@jasoncbenn">
         <div class="project__image-wrapper">
           <img class="project__image" src="public/pc-thumb.png" alt="">
         </div>
       </a>
       <div class="project__description">
-        <a href="https://medium.com/@jasoncbenn"><h3 class="project__title">Paper Club</h3></a>
+        <a onclick="trackOutboundLink('https://medium.com/@jasoncbenn'); return false;" href="https://medium.com/@jasoncbenn"><h3 class="project__title">Paper Club</h3></a>
         <p>My summaries, thoughts, and questions about classic, important, or recent academic papers in the fields of computer science, machine learning, and neural nets.</p>
       </div>
     </div>
@@ -85,7 +97,7 @@
     <div class="post">
       <div class="post__category">paper summary</div>
       <div class="post__description">
-        <h3><a href="#">The original ResNet paper</a></h3>
+        <h3><a onclick="trackOutboundLink('#'); return false;" href="#">The original ResNet paper</a></h3>
         <p>My summary and thoughts on the original ResNet paper, a classic in convolutional neural networks with implications for all kinds of neural nets.</p>
       </div>
     </div>
@@ -93,33 +105,22 @@
     <div class="post">
       <div class="post__category">talk</div>
       <div class="post__description">
-        <h3><a href="https://vimeo.com/224089116">Intro to QA Instances</a></h3>
+        <h3><a onclick="trackOutboundLink('https://vimeo.com/224089116'); return false;" href="https://vimeo.com/224089116">Intro to QA Instances</a></h3>
         <p>A one-hour tour of an early version of QA Instances, given to my colleagues at the Minerva Project. Includes a guided installation, a brief tour of features, an overview of the architecture, and instructions for getting started with local development.</p>
       </div>
     </div>
   </section>
 
-  <p class="contact">You can follow me on <a href="https://github.com/JasonBenn">Github</a>, <a href="https://twitter.com/jasoncbenn">Twitter</a>, <a href="https://medium.com/@jasoncbenn">Medium</a>, or <a href="mailto:jasoncbenn@gmail.com">email me</a>.</p>
+  <p class="contact">You can follow me on <a onclick="trackOutboundLink('https://github.com/JasonBenn'); return false;" href="https://github.com/JasonBenn">Github</a>, <a onclick="trackOutboundLink('https://twitter.com/jasoncbenn'); return false;" href="https://twitter.com/jasoncbenn">Twitter</a>, <a onclick="trackOutboundLink('https://medium.com/@jasoncbenn'); return false;" href="https://medium.com/@jasoncbenn">Medium</a>, or <a onclick="trackOutboundLink('mailto:jasoncbenn@gmail.com'); return false;" href="mailto:jasoncbenn@gmail.com">email me</a>.</p>
 
   <div class="divider divider--short"></div>
 
   <aside>
     <blockquote cite="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">
       <p class="pull-quote">Jason Benn’s transformation is nothing short of astonishing. [His] story highlights a crucial lesson: deep work is not some nostalgic affectation of of writers and early-twentieth-century philosophers. It’s instead a skill that has great value today.</p>
-      <p>— Cal Newport, <em><a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">Deep Work: Rules for Focused Success in a Distracted World</a></em></p>
+      <p>— Cal Newport, <em><a onclick="trackOutboundLink('https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692'); return false;" href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">Deep Work: Rules for Focused Success in a Distracted World</a></em></p>
     </blockquote>
   </aside>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-101977787-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
 
 </body>
 
