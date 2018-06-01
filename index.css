@@ -56,6 +56,10 @@ section, aside {
 a {
   text-decoration: none;
   transition: color 0.25s;
+  color: #0C85AC;
+}
+
+a.subtle {
   color: #212429;
 }
 
